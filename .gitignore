@@ -1,0 +1,9 @@
+.DS_Store
+*~
+compiled
+src/*.ltx
+src/*.pdf
+src/*.html
+pollen-latex-work
+input
+.idea
