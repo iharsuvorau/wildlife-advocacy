@@ -1,15 +1,5 @@
 #lang pollen
 
-abbreviations.html
-preface.html
 introduction.html
-chapter-1.html
-chapter-2.html
-chapter-3.html
-chapter-4.html
-chapter-5.html
-chapter-6.html
-conclusion.html
-bibliography.html
-appendix-1.html
-appendix-2.html
+◊; advocacy.html
+◊; advocacy-abc.html
