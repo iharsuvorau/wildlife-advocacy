@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta template "template-index.html")
-◊(define-meta title "Сохранить леса Беларуси: Практическое руководство")
-◊(define-meta description "Как использовать механизмы участия общественности в лесной сертификации FSC для охраны природы")
-◊(define-meta author "Инесса Зенина, Наталья Рябова")
+◊(define-meta title "Адвокатирование для сохранения дикой природы")
+◊(define-meta description "Опыт успешных общественных кампаний «Багны»")
+◊(define-meta author "Инесса Зенина, Ольга Каскевич, Елена Садовская, Наталья Рябова")
 ◊(define-meta publisher "Публикация «Школы дикой природы», ОО «Багна»")
