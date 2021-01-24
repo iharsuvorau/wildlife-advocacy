@@ -66,17 +66,16 @@
                \newgeometry{textwidth=17cm, textheight=25cm}
                \begin{titlepage}
                \begin{flushleft}
-               {\LARGE Инесса Зенина, Наталья Рябова \vspace{7cm}\par}
+               {\LARGE Инесса Зенина, Ольга Каскевич, Елена Садовская, Наталья Рябова \vspace{7cm}\par}
                {\setstretch{0.80}
-                           {\Huge Сохранить леса Беларуси: \\Практическое руководство.\par}}
+                           {\Huge Адвокатирование для сохранения \\дикой природы\par}}
                \bigskip
                \bigskip
                {\setstretch{1.25}
-               {\LARGE \textsf{\spaced{Как использовать механизмы участия общественности в лесной сертификации FSC для охраны природы}} \par}}
+               {\LARGE \textsf{\spaced{Опыт успешных общественных кампаний «Багны»}} \par}}
                \vfill
                {\normalsize Публикация «Школы дикой природы», ОО «Багна»\par}
-               {\normalsize В издании использованы материалы Георгия Козулько, ведущего аудитора компании «НЭПКон»\par}
-               {\normalsize Минск, 2020}
+               {\normalsize Минск, 2021}
                \end{flushleft}
                \end{titlepage}
                \restoregeometry

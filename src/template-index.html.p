@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="/assets/tufte.css"/>
 	<link rel="stylesheet" href="/assets/main.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" 
-	      type="image/png" 
+	<link rel="icon"
+	      type="image/png"
 	      href="/assets/favicon.png">
     </head>
     <body class="index-page">
@@ -34,13 +34,13 @@
 	    <p>
 		◊(hash-ref metas 'author)<br>
 		◊(hash-ref metas 'publisher)<br>
-		Минск, 2020
+		Минск, 2021
 	    </p>
 
 	    ◊(define (print-list-item pagenode)
 	    (when (select 'h1 (get-doc pagenode))
 	    (->html `(li (a ((href ,(format "~a" pagenode))) ,(select 'h1 (get-doc pagenode)))))))
-	    
+
 	    <ol>
 		◊(map print-list-item (children 'pagetree-root (current-pagetree)))
 	    </ol>
