@@ -1,6 +1,6 @@
-# FSC guide 2020 by Bahna
+# Wildlife advocacy 2021 by Bahna
 
-It's a [pollen](https://docs.racket-lang.org/pollen/) project with PDF and a website as output. 
+It's a [pollen](https://docs.racket-lang.org/pollen/) project with PDF and a website as output.
 
 
 To make a book, run:
