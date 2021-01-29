@@ -58,7 +58,7 @@
 ; The approach here is rather indiscriminate; I’ll probably have to change
 ; it once I get around to handline inline math, etc.
 (define (ltx-escape-str str)
-  (regexp-replace* #px"([$#%&_])" str "\\\\\\1"))
+  (regexp-replace* #px"([$#%_])" str "\\\\\\1"))
 
 #|
 `txt` is called by root when targeting LaTeX/PDF. It converts all elements inside
@@ -372,6 +372,46 @@ handle it at the Pollen processing level.
   (case (current-poly-target)
     [(ltx pdf) `(txt "\\paragraph{" ,@text "}")]
     [else `(span [[class "paragraph"]] ,@text)]))
+
+(define (table cols . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt "\\begin{center}\\begin{longtable}{" ,(string-join (make-list cols (format "p{~a\\linewidth}" (/ 1.0 cols))) " | ") "}\n" ,@elements "\\end{longtable}\\end{center}")]
+    [else `(table ,@elements)]))
+
+(define (table-header . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt  "\\hline ",@elements "\\hline \\endhead")]
+    [else `(thead ,@elements)]))
+
+(define (table-body . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements "\n")]
+    [else `(tbody ,@elements)]))
+
+(define (table-row . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements " \\\\ \\hline" )]
+    [else `(tr ,@elements)]))
+
+(define (th . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements " & ")]
+    [else `(th ,@elements)]))
+
+(define (th-last . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements)]
+    [else `(th ,@elements)]))
+
+(define (td . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements " & ")]
+    [else `(td ,@elements)]))
+
+(define (td-last . elements)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt ,@elements)]
+    [else `(td ,@elements)]))
 
 ;; (define (epigraph author . text)
 ;;   (case (current-poly-target)
