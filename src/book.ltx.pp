@@ -58,6 +58,8 @@
                \usepackage[htt]{hyphenat}
                \usepackage{soul} % for underlined text
                \usepackage{longtable} % multi-page tables
+               \usepackage{epigraph}
+               \setlength\epigraphwidth{.8\textwidth}
                % letter spacing
                \newcommand{\spacedsc}{\scshape\addfontfeatures{LetterSpace=20}}
                \newcommand{\spaced}{\scshape\addfontfeatures{LetterSpace=5}}

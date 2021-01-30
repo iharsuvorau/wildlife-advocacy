@@ -413,7 +413,7 @@ handle it at the Pollen processing level.
     [(ltx pdf) `(txt ,@elements)]
     [else `(td ,@elements)]))
 
-;; (define (epigraph author . text)
-;;   (case (current-poly-target)
-;;     [(ltx pdf) `(txt "\\openepigraph{" ,@text "}{" ,author "}")]
-;;     [else `(div [[class "additional-materials"]] ,@text)]))
+(define (epigraph author . text)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt "\\epigraph{" ,@text "}{" ,author "}")]
+    [else `(div [[class "additional-materials"]] ,@text)]))
