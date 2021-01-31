@@ -416,4 +416,4 @@ handle it at the Pollen processing level.
 (define (epigraph author . text)
   (case (current-poly-target)
     [(ltx pdf) `(txt "\\epigraph{" ,@text "}{" ,author "}")]
-    [else `(div [[class "additional-materials"]] ,@text)]))
+    [else `(div [[class "additional-materials"]] ,@text (p ,author))]))
