@@ -30,7 +30,7 @@
 	</header>
 	<article>
 	    <h1>◊(hash-ref metas 'title)</h1>
-	    <p class="subtitle">Как использовать механизмы участия общественности в лесной сертификации FSC для&nbsp;охраны природы</p>
+	    <p class="subtitle">Опыт успешных общественных кампаний «Багны»</p>
 	    <p>
 		◊(hash-ref metas 'author)<br>
 		◊(hash-ref metas 'publisher)<br>
